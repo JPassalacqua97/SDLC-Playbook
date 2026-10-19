@@ -1,0 +1,24 @@
+name: Create SDLC labels
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/sdlc-labels.json
+      - scripts/create-sdlc-labels.py
+      - .github/workflows/sdlc-labels.yml
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  labels:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create or update labels
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/create-sdlc-labels.py

@@ -1,0 +1,107 @@
+[
+  {
+    "name": "sdlc",
+    "color": "1B3A4B",
+    "description": "Work item in the SDLC pipeline. Intake trigger for CoS."
+  },
+  {
+    "name": "sdlc:stage/0",
+    "color": "1D3557",
+    "description": "Stage 0 Intake. CoS owns the brief and the tier."
+  },
+  {
+    "name": "sdlc:stage/1",
+    "color": "457B9D",
+    "description": "Stage 1 Requirements. Product owns requirements.md."
+  },
+  {
+    "name": "sdlc:stage/2",
+    "color": "1D4E89",
+    "description": "Stage 2 Architecture. Architect owns design, ADR, and the plan."
+  },
+  {
+    "name": "sdlc:stage/3",
+    "color": "2A9D8F",
+    "description": "Stage 3 Implementation. Developer drives a Cursor cloud agent."
+  },
+  {
+    "name": "sdlc:stage/4",
+    "color": "9A7D0A",
+    "description": "Stage 4 Review and QA. Reviewer owns the verdict."
+  },
+  {
+    "name": "sdlc:stage/5",
+    "color": "E07A3D",
+    "description": "Stage 5 Release. Ops owns the deploy record and the watch."
+  },
+  {
+    "name": "sdlc:stage/6",
+    "color": "52796F",
+    "description": "Stage 6 Docs. Scribe owns the docs PR. Joseph merges it."
+  },
+  {
+    "name": "sdlc:stage/7",
+    "color": "6D597A",
+    "description": "Stage 7 Feedback. CoS owns the retro and follow-ups."
+  },
+  {
+    "name": "sdlc:tier/T0",
+    "color": "2D6A4F",
+    "description": "T0 fast lane. Skips requirements and architecture. Joseph still merges."
+  },
+  {
+    "name": "sdlc:tier/T1",
+    "color": "1B4332",
+    "description": "T1 standard. All stages. Human gates H1, H3, and H4."
+  },
+  {
+    "name": "sdlc:tier/T2",
+    "color": "9B2226",
+    "description": "T2 high-risk. All stages plus H0, H2, and H5."
+  },
+  {
+    "name": "sdlc:blocked",
+    "color": "D00000",
+    "description": "Blocked. The owner sent BLOCKED and CoS has not cleared it."
+  },
+  {
+    "name": "sdlc:awaiting-joseph",
+    "color": "BB8500",
+    "description": "Waiting on Joseph for H0, H1, H2, H3, H4, or H5."
+  },
+  {
+    "name": "sdlc:owner/chief-of-staff",
+    "color": "495057",
+    "description": "Current owner is Chief of Staff."
+  },
+  {
+    "name": "sdlc:owner/product",
+    "color": "6C757D",
+    "description": "Current owner is Product."
+  },
+  {
+    "name": "sdlc:owner/architect",
+    "color": "868E96",
+    "description": "Current owner is Architect."
+  },
+  {
+    "name": "sdlc:owner/developer",
+    "color": "343A40",
+    "description": "Current owner is Developer."
+  },
+  {
+    "name": "sdlc:owner/reviewer",
+    "color": "212529",
+    "description": "Current owner is Reviewer."
+  },
+  {
+    "name": "sdlc:owner/ops",
+    "color": "5C6770",
+    "description": "Current owner is Ops."
+  },
+  {
+    "name": "sdlc:owner/scribe",
+    "color": "7D8590",
+    "description": "Current owner is Scribe."
+  }
+]

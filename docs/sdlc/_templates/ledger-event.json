@@ -1,0 +1,12 @@
+{
+  "ts": "2026-10-19T21:00:00Z",
+  "work_id": "20261019-example",
+  "seq": 1,
+  "type": "ASSIGN",
+  "stage": "0-intake",
+  "owner": "chief-of-staff",
+  "tier": "T1",
+  "artifact_refs": ["docs/sdlc/20261019-example/brief.md@sha"],
+  "gate": "G0",
+  "attempt": 1
+}

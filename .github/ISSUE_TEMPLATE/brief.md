@@ -8,8 +8,8 @@ labels: "sdlc, sdlc:stage/0"
 ---
 work_id:
 tier: T0 | T1 | T2 | unclear
-repo: JPassalacqua97/SDLCPipelines
-source: joseph | github:NN | sentry:ISSUE-ID | pagerduty:INCIDENT-ID
+repo: "`<PRODUCT_REPO>`"
+source: owner | github:NN | sentry:ISSUE-ID | pagerduty:INCIDENT-ID
 requested_by:
 created:
 ---

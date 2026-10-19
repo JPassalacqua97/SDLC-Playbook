@@ -22,7 +22,7 @@ REQUIRED = [
     "sdlc:tier/T1",
     "sdlc:tier/T2",
     "sdlc:blocked",
-    "sdlc:awaiting-joseph",
+    "sdlc:awaiting-owner",
     "sdlc:owner/chief-of-staff",
     "sdlc:owner/product",
     "sdlc:owner/architect",

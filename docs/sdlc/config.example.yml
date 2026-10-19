@@ -1,0 +1,79 @@
+# Adopter configuration for the SDLC playbook.
+#
+# Copy this file to docs/sdlc/config.yml in the product repo and replace every
+# <PLACEHOLDER>, including placeholders nested inside other values. Do not
+# commit config.yml. Bot ids are routing ids. Treat them as private.
+#
+# The playbook repository and the product repository are different checkouts.
+# Role text, issues, pull requests, and work artifacts belong to the product repo.
+#
+# Merge keys below are the design defaults: the owner merges every pull request
+# after Reviewer/QA PASS, and auto-merge stays off. Change them only by
+# reopening decision D4 in docs/sdlc/SDLC_PIPELINE.md.
+
+playbook:
+  repo: "<PLAYBOOK_REPO>"
+
+product:
+  repo: "<PRODUCT_REPO>"
+  url: "https://github.com/<PRODUCT_REPO>"
+  base_branch: main
+  forge: github
+
+tracker:
+  kind: github-issues
+
+artifacts:
+  # Paths inside the product repo.
+  work_root: docs/sdlc
+  adr_root: docs/adr
+  ledger_shape: docs/sdlc/_templates/ledger-event.json
+
+ledger:
+  # Chief of Staff store. This path is not a file in either git repository.
+  path: "/cursor/stores/<COS_STORE_ID>/sdlc/ledger.jsonl"
+
+bots:
+  # SendToAgent routing ids. Create the bots, paste the role files, then record the ids.
+  chief_of_staff: "<COS_BOT_ID>"
+  product: "<PRODUCT_BOT_ID>"
+  architect: "<ARCHITECT_BOT_ID>"
+  developer: "<DEVELOPER_BOT_ID>"
+  reviewer: "<REVIEWER_BOT_ID>"
+  ops: "<OPS_BOT_ID>"
+  scribe: "<SCRIBE_BOT_ID>"
+  # The general backup bot has no id in the design (decision D8).
+
+merge:
+  owner_merges_every_pr: true
+  after_reviewer_qa_pass: true
+  auto_merge: false
+  delegate_merge: false
+
+digest:
+  cron: "0 9 * * 1-5"
+  timezone: America/New_York
+
+weekly_retro:
+  cron: "0 16 * * 5"
+  timezone: America/New_York
+
+gates:
+  h0:
+    when: "T2, or priority is unclear"
+    delegable: false
+  h1:
+    when: "T1 and T2 scope"
+    delegable: false
+  h2:
+    when: "T2 design"
+    delegable: false
+  h3:
+    when: "every tier, including T0 and docs PRs"
+    delegable: false
+  h4:
+    when: "production release for T1 and T2"
+    delegable: false
+  h5:
+    when: "destructive database change"
+    delegable: false

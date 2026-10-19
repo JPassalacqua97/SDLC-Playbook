@@ -1,10 +1,10 @@
 ---
 work_id: YYYYMMDD-slug
 tier: T0 | T1 | T2
-repo: JPassalacqua97/SDLCPipelines
-source: joseph | github:NN | sentry:ISSUE-ID | pagerduty:INCIDENT-ID
+repo: "<PRODUCT_REPO>"
+source: owner | github:NN | sentry:ISSUE-ID | pagerduty:INCIDENT-ID
 requested_by:
-created: YYYY-MM-DDTHH:MM-04:00
+created: YYYY-MM-DDTHH:MM:SSZ
 ---
 
 ## Problem

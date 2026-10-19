@@ -6,7 +6,7 @@ merged_sha:
 
 ## Approvals
 
-- H3: Joseph merged PR(s). Links:
+- H3: The owner merged PR(s). Links:
 - H4: required for T1/T2. Quote the approval, or `not required (T0)`.
 - H5: quote the approval and the migration name, or `no destructive migration`.
 

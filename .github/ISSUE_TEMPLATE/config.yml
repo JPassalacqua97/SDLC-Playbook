@@ -1,5 +1,1 @@
 blank_issues_enabled: true
-contact_links:
-  - name: SDLC pipeline design
-    url: https://github.com/JPassalacqua97/SDLCPipelines/blob/main/docs/sdlc/SDLC_PIPELINE.md
-    about: Read the pipeline before opening work that is not a brief.

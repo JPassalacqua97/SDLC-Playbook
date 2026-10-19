@@ -8,6 +8,6 @@ work_id: YYYYMMDD-slug
 
 Delivery mode: single PR | autopilot-stack | orchestrate
 
-`autopilot-full` is not a delivery mode. Joseph merges every PR. Sequenced slices use `autopilot-stack` and stop at `STACK-READY`.
+`autopilot-full` is not a delivery mode. The owner merges every PR. Sequenced slices use `autopilot-stack` and stop at `STACK-READY`.
 
 Playbook values: `feature`, `bug fix`, `refactoring`, `perf`, `prototype`. Verification names a test, a measurement, or a manual check.

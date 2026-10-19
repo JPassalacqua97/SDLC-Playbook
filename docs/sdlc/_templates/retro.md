@@ -28,4 +28,4 @@ closed:
 
 ## Follow-ups
 
-New intake items, or `none`. Role-instruction edits wait for Joseph.
+New intake items, or `none`. Role-instruction edits wait for the owner.

@@ -19,7 +19,7 @@ Verdict: PASS | REWORK:implementation | REWORK:architecture | REWORK:requirement
 
 ## Preview
 
-URL, or `none` when this repo has no preview deploy.
+URL, or `none` when this product repo has no preview deploy.
 
 ## Gate G4
 

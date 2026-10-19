@@ -22,4 +22,4 @@ What becomes easier, what becomes harder, and what is now ruled out.
 
 ## Status
 
-`Proposed` while the docs PR is open. Scribe sets `Accepted` after Joseph merges. `Superseded` names the ADR that replaced this one.
+`Proposed` while the docs PR is open. Scribe sets `Accepted` after the owner merges. `Superseded` names the ADR that replaced this one.
